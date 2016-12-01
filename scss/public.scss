@@ -1,0 +1,76 @@
+
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  background: #fff;
+}
+
+a {
+  color: #808285;
+  text-decoration: none
+}
+em {
+  font-style: normal
+}
+
+li {
+  list-style: none
+}
+
+img {
+  border: 0;
+  vertical-align: middle
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+p {
+  word-wrap: break-word
+}
+
+html{
+  font-size:1200px;
+}
+
+@function px($px) {
+  @return $px/2560*1rem;
+}
+
+@function font($font){
+  @return $font/1200*100%;
+}
+@mixin size($width,$height){
+  width:$width/2560*1rem;
+  height:$height/2560*1rem;
+}
+
+header{
+  overflow:hidden;
+  position:relative;
+  height:px(360);
+  font-size:font(20);
+  img{
+    float:left;
+    @include size(551,209);
+    margin:px(70) px(100);
+  }
+  nav{
+    position:absolute;
+    line-height:px(360);
+    left:px(900);
+    a{
+      float:left;
+      height:px(360);
+      margin:0 px(90);
+      &:hover{
+        color:#5f328f;
+      }
+    }
+  }
+}

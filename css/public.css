@@ -1,0 +1,53 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff; }
+
+a {
+  color: #808285;
+  text-decoration: none; }
+
+em {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+p {
+  word-wrap: break-word; }
+
+html {
+  font-size: 1200px; }
+
+header {
+  overflow: hidden;
+  position: relative;
+  height: 0.14063rem;
+  font-size: 1.66667%; }
+  header img {
+    float: left;
+    width: 0.21523rem;
+    height: 0.08164rem;
+    margin: 0.02734rem 0.03906rem; }
+  header nav {
+    position: absolute;
+    line-height: 0.14063rem;
+    left: 0.35156rem; }
+    header nav a {
+      float: left;
+      height: 0.14063rem;
+      margin: 0 0.03516rem; }
+      header nav a:hover {
+        color: #5f328f; }
+
+/*# sourceMappingURL=public.css.map */

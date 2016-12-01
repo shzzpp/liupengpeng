@@ -1,0 +1,91 @@
+@function px($px) {
+  @return $px/2560*1rem;
+}
+
+@mixin size($width,$height) {
+  height: $height/2560*1rem;
+  width: $width/2560*1rem;
+}
+
+section{
+  &>div{
+    @include size(2560,1200);
+    position:relative;
+    a{
+      display:block;
+      @include size(615,170);
+      border-radius:px(30);
+      color:white;
+      background:#522c83;
+      position:absolute;
+      border:px(10) white solid;
+      font:{
+        size:px(50);
+      }
+      text-align:center;
+      line-height:px(170);
+
+    }
+    article{
+      position:absolute;
+      font:{
+        size:px(36);
+      }
+      color:#747579;
+      line-height:px(60);
+    }
+  }
+  div:first-child{
+    background:url(../images/products/PAI_PRODUCT_PAGE_02.png) no-repeat left center;
+    background-size:auto 100%;
+    a{
+      left:px(195);
+      bottom:px(286);
+    }
+    article{
+      width:px(845);
+      left:px(210);
+      top:px(460);
+    }
+  }
+  div:nth-child(2){
+    background:url(../images/products/PAI_PRODUCT_PAGE_03.png) no-repeat left center;
+    background-size:auto 100%;
+    a{
+      right:px(515);
+      bottom:px(246);
+    }
+    article{
+      width:px(940);
+      top:px(407);
+      left:px(1426)
+    }
+  }
+  div:nth-child(3){
+    background:url(../images/products/PAI_PRODUCT_PAGE_04.jpg) no-repeat left center;
+    background-size:auto 100%;
+    a{
+      left:px(200);
+      bottom:px(240);
+    }
+    article{
+      width:px(1188);
+      top:px(405);
+      left:px(200);
+    }
+  }
+  div:nth-child(4){
+    background:url(../images/products/PAI_PRODUCT_PAGE_05.png) no-repeat left center;
+    background-size:auto 100%;
+    a{
+      right:px(525);
+      bottom:px(150);
+    }
+    article{
+      width:px(930);
+      top:px(444);
+      left:px(1415);
+    }
+  }
+
+}

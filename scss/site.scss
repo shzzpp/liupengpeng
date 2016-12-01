@@ -1,0 +1,117 @@
+@function px($px) {
+  @return $px/2560*1rem;
+}
+
+@function font($font) {
+  @return $font/1200*100%;
+}
+
+@mixin size($width,$height) {
+  height: $height/2560*1rem;
+  width: $width/2560*1rem;
+}
+section {
+  & > div {
+    height: px(1200);
+    width: px(2560);
+  }
+  .section-t {
+    background: url(../images/site/PAI_AD1_3.jpg) no-repeat center;
+    background-size: auto 100%;
+
+  }
+  .section-m1 {
+    background: url(../images/site/PAI_AD2.jpg) no-repeat center;
+    background-size: auto 100%;
+    article {
+      width: px(720);
+      float: left;
+      line-height: px(50);
+      margin: {
+        top: px(510);
+        left: px(100);
+      }
+      font: {
+        size: px(36);
+      }
+      color: #7e8285;
+    }
+
+  }
+  .section-m2 {
+    background: url(../images/site/PAI_AD3.jpg) no-repeat center;
+    background-size: auto 100%;
+    position: relative;
+    a {
+      display: block;
+      position: absolute;
+      @include size(600, 160);
+      border: px(10) white solid;
+      border-radius: px(20);
+      background: #5f328f;
+      color: white;
+      font: {
+        size: px(52);
+
+      }
+      line-height: px(160);
+      text-align: center;
+      bottom: px(300);
+      left: px(130)
+    }
+
+  }
+
+  .section-b {
+    overflow: hidden;
+    height: px(600);
+    a {
+      float: left;
+      height: px(160);
+      margin: px(226) px(40);
+      img {
+        display: block;
+        height: 90%
+      }
+    }
+  }
+}
+
+footer {
+  height: px(480);
+  background: #5f328f;
+  overflow: hidden;
+  padding:{
+    left:px(1340);
+  }
+  & > a {
+    float: left;
+    @include size(130, 130);
+    margin: {
+      top: px(190);
+      left: px(110);
+    }
+
+  }
+  & > a:nth-of-type(1) {
+    background: url(../images/site/t.png) no-repeat left center;
+    background-size: 100% 100%;
+
+  }
+  & > a:nth-of-type(2) {
+    background: url(../images/site/tw.png) no-repeat center;
+    background-size: 100% 100%;
+
+  }
+  & > a:nth-of-type(3) {
+    background: url(../images/site/f.png) no-repeat left center;
+    background-size: 100% 100%;
+
+  }
+  & > a:nth-of-type(4) {
+    background: url(../images/site/Group-2.png) no-repeat left center;
+    background-size: 100% 100%;
+
+  }
+}
+

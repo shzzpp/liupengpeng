@@ -1,0 +1,63 @@
+section > div {
+  height: 0.46875rem;
+  width: 1rem;
+  position: relative; }
+  section > div a,section > div span{
+    display: block;
+    height: 0.06641rem;
+    width: 0.24023rem;
+    border-radius: 0.01172rem;
+    color: white;
+    background: #522c83;
+    position: absolute;
+    border: 0.00391rem white solid;
+    font-size: 0.01953rem;
+    text-align: center;
+    line-height: 0.06641rem; }
+  section > div article {
+    position: absolute;
+    font-size: 0.01406rem;
+    color: #747579;
+    line-height: 0.02344rem; }
+section div:first-child {
+  background: url(../images/products/PAI_PRODUCT_PAGE_02.png) no-repeat left center;
+  background-size: auto 100%; }
+  section div:first-child a {
+    left: 0.07617rem;
+    bottom: 0.11172rem; }
+  section div:first-child article {
+    width: 0.33008rem;
+    left: 0.08203rem;
+    top: 0.17969rem; }
+section div:nth-child(2) {
+  background: url(../images/products/PAI_PRODUCT_PAGE_03.png) no-repeat left center;
+  background-size: auto 100%; }
+  section div:nth-child(2) a {
+    right: 0.20117rem;
+    bottom: 0.09609rem; }
+  section div:nth-child(2) article {
+    width: 0.36719rem;
+    top: 0.15898rem;
+    left: 0.55703rem; }
+section div:nth-child(3) {
+  background: url(../images/products/PAI_PRODUCT_PAGE_04.jpg) no-repeat left center;
+  background-size: auto 100%; }
+  section div:nth-child(3) span {
+    left: 0.07813rem;
+    bottom: 0.09375rem; }
+  section div:nth-child(3) article {
+    width: 0.46406rem;
+    top: 0.1582rem;
+    left: 0.07813rem; }
+section div:nth-child(4) {
+  background: url(../images/products/PAI_PRODUCT_PAGE_05.png) no-repeat left center;
+  background-size: auto 100%; }
+  section div:nth-child(4) span {
+    right: 0.20508rem;
+    bottom: 0.05859rem; }
+  section div:nth-child(4) article {
+    width: 0.36328rem;
+    top: 0.17344rem;
+    left: 0.55273rem; }
+
+/*# sourceMappingURL=products.css.map */
